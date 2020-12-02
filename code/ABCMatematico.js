@@ -31,7 +31,7 @@ function startABC()
             'Palabra incorrecta',
             'Debes introducir una palabra',
             'question'
-          )
+          );
           return;
 
     }

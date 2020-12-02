@@ -10,10 +10,17 @@
 
 .pictograma_container p
 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#searchPictogram_container p
+{
     color: #194E92;
     font-size: 15px;
     font-weight: bold;
-
 }
 
 .pictograma_container input
@@ -39,4 +46,63 @@
     margin-top: 15px;
     text-align: center;
     background-color: rgba(25,25,25,0.5);
+}
+
+#playPictogram_container
+{
+    width: 97vw;
+    padding: 15px;
+    height: 66vh;
+}
+
+.pictogram_resolve
+{
+    width: 70%;
+}
+
+.pictogram_container
+{
+    width: 500px;
+    max-width: 30%;
+}
+
+#pictogram_image
+{
+    width: 100%;
+}
+
+#pictogram_word
+{
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    margin: 5vw;
+    margin-top: 0;
+    border: 1px solid #0d2a50;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 20px;
+
+}
+
+#picogram_vocals
+{
+    display: inline-flex;
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 20px;
+    margin: 5vw;
+    margin-top: 0;
+    border: 1px solid #0d2a50;
+}
+
+.vocal
+{
+    width: 9vw;
+    margin: 1vw;
+    padding: 3vw;
+    border-radius: 20px;
+    background: #194E92;
+    color: white;
+    text-align: center;
 }
