@@ -5,29 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogApps</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" /></head>
+
 <body>
 
     <div class="upper">
-        <a href="www.google.es">
+        <a href="">
             <img src="assets/Logo.png">
         </a></div>
 
 
     <div class="body">
 
-        <div class="body_container">
+        <div class="menu container">
             <div class="app_section_title">Sección de juegos interactivos</div>
             <hr></hr>
             <div class="app_grids">
-                <a class="app" href="https://www.google.es">
+                <a class="app" onclick="show_zone('abecedario')">
                     <img class="app_logo" src="assets/abc.png"> 
                     <div class="app_title">ABECEDARIO MATEMÁTICO</div> 
                 </a>
-                <a class="app" href="https://www.google.es">
+                <a class="app" onclick="show_zone('pictogramas')">
                     <img class="app_logo" src="assets/ARASAAC.png"> 
                     <div class="app_title">PICTOGRAMAS (ARASAAC)</div> 
                 </a>
             </div>
+        </div>
+
+        <div class="abecedario container">
+            <div class="app_section_title">Abecedario Matemático</div>
+            <hr></hr>
+
+            <div class="abc_container">
+                <p>Introduce una palabra para empezar a jugar</p>
+                <div>
+                    <input type="password" id="hiddenPassword">
+                    <i class="far fa-eye" onclick="show_abecedario_matematico_word()"></i>
+                </div>
+                <button class="ABCButton" onclick="ABCMatematico()">JUGAR</button>
+                <div id="ABC_game_container" hidden>
+                    <div id="ABC_Game_word">ESTA ES LA PALABRA QUE SE HA GENERADO</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pictogramas container" hidden>
+            <div class="app_section_title">Pictogramas (ARASAAC)</div>
+            <hr></hr>
+
         </div>
 
     </div>
@@ -38,6 +63,10 @@
         <footer> &copy; Copyright 2020, Jorge Bárcena Lumbreras </footer> 
     </div>
     
+    <script src="code/lib/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/37587fa3f5.js" crossorigin="anonymous"></script>
+    <script src="code/lib/sweetalert2.all.min.js"></script>
+    <script src="code/lib/confetti.js"></script>
     <script src="code/code.js"></script>
 </body>
 </html>
