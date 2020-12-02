@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogApps - Juegos interactivos</title>
     <link rel="icon" type="image/png" href="assets/Logo.png">
+    <link rel="stylesheet" type="text/css" href="styles/ABCStyle.css" /></head>
+    <link rel="stylesheet" type="text/css" href="styles/pictogramaStyle.css" /></head>
     <link rel="stylesheet" type="text/css" href="styles/style.css" /></head>
 
 <body>
@@ -25,7 +27,7 @@
                     <img class="app_logo" src="assets/abc.png"> 
                     <div class="app_title">ABECEDARIO MATEMÁTICO</div> 
                 </a>
-                <a class="app" onclick="show_zone('pictogramas')">
+                <a class="app" onclick="show_zone('pictograma')">
                     <img class="app_logo" src="assets/ARASAAC.png"> 
                     <div class="app_title">PICTOGRAMAS (ARASAAC)</div> 
                 </a>
@@ -50,9 +52,20 @@
 
         </div>
 
-        <div class="pictogramas container" hidden>
+        <div class="pictograma container" hidden>
             <div class="app_section_title">Pictogramas (ARASAAC)</div>
             <hr></hr>
+
+            <div class="pictograma_container">
+                <div id="searchPictogram_container">
+                    <p>Introduce una pista para generar una palabra (opcional y recomendado)</p>
+                    <div>
+                        <input type="password" id="hiddenHint">
+                        <i class="far fa-eye" onclick="show_pictograma_hint()"></i>
+                    </div>
+                    <button class="pictogramaButton" onclick="obtainPictogram()">Generar</button>
+                </div>
+            </div>
 
         </div>
 
@@ -69,6 +82,7 @@
     <script src="code/lib/sweetalert2.all.min.js"></script>
     <script src="code/lib/confetti.js"></script>
     <script src="code/ABCMatematico.js"></script>
+    <script src="code/pictograma.js"></script>
     <script src="code/code.js"></script>
 
 </body>
