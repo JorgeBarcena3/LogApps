@@ -160,10 +160,6 @@ function finishGame()
         $(".pictograma_container i").removeClass();
         $(".pictograma_container i").addClass("far fa-eye");
       });
-
-    
-
-
 }
 
 function show_pictograma_hint()
