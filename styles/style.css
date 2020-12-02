@@ -55,26 +55,16 @@ button:checked button:focus
     left: 0;
     top: 0;
     width: 100%;
-    height: 10vh;
+    height: 85px;
     background-color: rgba(250, 250, 250, 0.88);
     color: white;
 }
 
-.upper a
-{
-    position: fixed;
-    left: 0;
-    top: 0;
-
-}
-
 .upper img
-{    
-    position: fixed;
-    width: 150px;
-    top: -6%;
+{
+    width: 160px;
+    margin-top: -40px;
 }
-
 .upper p
 {
     position: fixed;
@@ -82,7 +72,7 @@ button:checked button:focus
     text-align: center;
     font-size: 17px;
     left: 165px;
-    top: 25px;
+    top: 30px;
 
 }
 
